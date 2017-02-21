@@ -1,0 +1,282 @@
+﻿  port.cc
+d:\desktop\sparsehash-master\src\windows\port.cc(44): error C2084: 関数 'int snprintf(char *const ,const size_t,const char *const ,...)' は既に本体を持っています。
+  c:\program files\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1932): note: 'snprintf' の以前の定義を確認してください
+  hashtable_test.cc
+d:\desktop\sparsehash-master\src\hashtable_test.cc(1920): warning C4305: '引数': 'double' から 'float' へ切り詰めます。
+d:\desktop\sparsehash-master\src\sparsehash\internal\sparsehashtable.h(233): warning C4503: '__LINE__Var': 装飾された名前の長さが限界を超えました。名前は切り捨てられます。
+  d:\desktop\sparsehash-master\src\sparsehash\internal\sparsehashtable.h(231): note: クラス テンプレート のメンバー関数 'google::sparse_hashtable_const_iterator<Value,Key,HashFcn,ExtractKey,SetKey,EqualKey,Alloc>::sparse_hashtable_const_iterator(const google::sparse_hashtable<Value,Key,HashFcn,ExtractKey,SetKey,EqualKey,Alloc> *,google::const_two_d_iterator<std::vector<google::sparsegroup<T,48,Alloc>,google::libc_allocator_with_realloc<U>>>,google::const_two_d_iterator<std::vector<google::sparsegroup<T,48,Alloc>,google::libc_allocator_with_realloc<U>>>)' のコンパイル中
+          with
+          [
+              Value=std::pair<const std::string,google::sparse_hash_map<int,std::string,stdext::hash_compare<int,std::less<int>>,std::equal_to<int>,google::libc_allocator_with_realloc<std::pair<const int,std::string>>>>,
+              Key=std::string,
+              HashFcn=`anonymous-namespace'::Hasher,
+              ExtractKey=google::sparse_hash_map<std::string,google::sparse_hash_map<int,std::string,stdext::hash_compare<int,std::less<int>>,std::equal_to<int>,google::libc_allocator_with_realloc<std::pair<const int,std::string>>>,`anonymous-namespace'::Hasher,`anonymous-namespace'::Hasher,google::libc_allocator_with_realloc<std::pair<const std::string,google::sparse_hash_map<int,std::string,stdext::hash_compare<int,std::less<int>>,std::equal_to<int>,google::libc_allocator_with_realloc<std::pair<const int,std::string>>>>>>::SelectKey,
+              SetKey=google::sparse_hash_map<std::string,google::sparse_hash_map<int,std::string,stdext::hash_compare<int,std::less<int>>,std::equal_to<int>,google::libc_allocator_with_realloc<std::pair<const int,std::string>>>,`anonymous-namespace'::Hasher,`anonymous-namespace'::Hasher,google::libc_allocator_with_realloc<std::pair<const std::string,google::sparse_hash_map<int,std::string,stdext::hash_compare<int,std::less<int>>,std::equal_to<int>,google::libc_allocator_with_realloc<std::pair<const int,std::string>>>>>>::SetKey,
+              EqualKey=`anonymous-namespace'::Hasher,
+              Alloc=google::libc_allocator_with_realloc<std::pair<const std::string,google::sparse_hash_map<int,std::string,stdext::hash_compare<int,std::less<int>>,std::equal_to<int>,google::libc_allocator_with_realloc<std::pair<const int,std::string>>>>>,
+              T=std::pair<const std::string,google::sparse_hash_map<int,std::string,stdext::hash_compare<int,std::less<int>>,std::equal_to<int>,google::libc_allocator_with_realloc<std::pair<const int,std::string>>>>,
+              U=google::sparsegroup<std::pair<const std::string,google::sparse_hash_map<int,std::string,stdext::hash_compare<int,std::less<int>>,std::equal_to<int>,google::libc_allocator_with_realloc<std::pair<const int,std::string>>>>,48,google::libc_allocator_with_realloc<std::pair<const std::string,google::sparse_hash_map<int,std::string,stdext::hash_compare<int,std::less<int>>,std::equal_to<int>,google::libc_allocator_with_realloc<std::pair<const int,std::string>>>>>>
+          ]
+  d:\desktop\sparsehash-master\src\sparsehash\internal\sparsehashtable.h(383): note: コンパイル対象の関数 テンプレート インスタンス化 'google::sparse_hashtable_const_iterator<Value,Key,HashFcn,ExtractKey,SetKey,EqualKey,Alloc>::sparse_hashtable_const_iterator(const google::sparse_hashtable<Value,Key,HashFcn,ExtractKey,SetKey,EqualKey,Alloc> *,google::const_two_d_iterator<std::vector<google::sparsegroup<T,48,Alloc>,google::libc_allocator_with_realloc<U>>>,google::const_two_d_iterator<std::vector<google::sparsegroup<T,48,Alloc>,google::libc_allocator_with_realloc<U>>>)' のリファレンスを確認してください
+          with
+          [
+              Value=std::pair<const std::string,google::sparse_hash_map<int,std::string,stdext::hash_compare<int,std::less<int>>,std::equal_to<int>,google::libc_allocator_with_realloc<std::pair<const int,std::string>>>>,
+              Key=std::string,
+              HashFcn=`anonymous-namespace'::Hasher,
+              ExtractKey=google::sparse_hash_map<std::string,google::sparse_hash_map<int,std::string,stdext::hash_compare<int,std::less<int>>,std::equal_to<int>,google::libc_allocator_with_realloc<std::pair<const int,std::string>>>,`anonymous-namespace'::Hasher,`anonymous-namespace'::Hasher,google::libc_allocator_with_realloc<std::pair<const std::string,google::sparse_hash_map<int,std::string,stdext::hash_compare<int,std::less<int>>,std::equal_to<int>,google::libc_allocator_with_realloc<std::pair<const int,std::string>>>>>>::SelectKey,
+              SetKey=google::sparse_hash_map<std::string,google::sparse_hash_map<int,std::string,stdext::hash_compare<int,std::less<int>>,std::equal_to<int>,google::libc_allocator_with_realloc<std::pair<const int,std::string>>>,`anonymous-namespace'::Hasher,`anonymous-namespace'::Hasher,google::libc_allocator_with_realloc<std::pair<const std::string,google::sparse_hash_map<int,std::string,stdext::hash_compare<int,std::less<int>>,std::equal_to<int>,google::libc_allocator_with_realloc<std::pair<const int,std::string>>>>>>::SetKey,
+              EqualKey=`anonymous-namespace'::Hasher,
+              Alloc=google::libc_allocator_with_realloc<std::pair<const std::string,google::sparse_hash_map<int,std::string,stdext::hash_compare<int,std::less<int>>,std::equal_to<int>,google::libc_allocator_with_realloc<std::pair<const int,std::string>>>>>,
+              T=std::pair<const std::string,google::sparse_hash_map<int,std::string,stdext::hash_compare<int,std::less<int>>,std::equal_to<int>,google::libc_allocator_with_realloc<std::pair<const int,std::string>>>>,
+              U=google::sparsegroup<std::pair<const std::string,google::sparse_hash_map<int,std::string,stdext::hash_compare<int,std::less<int>>,std::equal_to<int>,google::libc_allocator_with_realloc<std::pair<const int,std::string>>>>,48,google::libc_allocator_with_realloc<std::pair<const std::string,google::sparse_hash_map<int,std::string,stdext::hash_compare<int,std::less<int>>,std::equal_to<int>,google::libc_allocator_with_realloc<std::pair<const int,std::string>>>>>>
+          ]
+  d:\desktop\sparsehash-master\src\sparsehash\internal\sparsehashtable.h(676): note: コンパイル対象のクラス テンプレート インスタンス化 'google::sparse_hashtable_const_iterator<Value,Key,HashFcn,ExtractKey,SetKey,EqualKey,Alloc>' のリファレンスを確認してください
+          with
+          [
+              Value=std::pair<const std::string,google::sparse_hash_map<int,std::string,stdext::hash_compare<int,std::less<int>>,std::equal_to<int>,google::libc_allocator_with_realloc<std::pair<const int,std::string>>>>,
+              Key=std::string,
+              HashFcn=`anonymous-namespace'::Hasher,
+              ExtractKey=google::sparse_hash_map<std::string,google::sparse_hash_map<int,std::string,stdext::hash_compare<int,std::less<int>>,std::equal_to<int>,google::libc_allocator_with_realloc<std::pair<const int,std::string>>>,`anonymous-namespace'::Hasher,`anonymous-namespace'::Hasher,google::libc_allocator_with_realloc<std::pair<const std::string,google::sparse_hash_map<int,std::string,stdext::hash_compare<int,std::less<int>>,std::equal_to<int>,google::libc_allocator_with_realloc<std::pair<const int,std::string>>>>>>::SelectKey,
+              SetKey=google::sparse_hash_map<std::string,google::sparse_hash_map<int,std::string,stdext::hash_compare<int,std::less<int>>,std::equal_to<int>,google::libc_allocator_with_realloc<std::pair<const int,std::string>>>,`anonymous-namespace'::Hasher,`anonymous-namespace'::Hasher,google::libc_allocator_with_realloc<std::pair<const std::string,google::sparse_hash_map<int,std::string,stdext::hash_compare<int,std::less<int>>,std::equal_to<int>,google::libc_allocator_with_realloc<std::pair<const int,std::string>>>>>>::SetKey,
+              EqualKey=`anonymous-namespace'::Hasher,
+              Alloc=google::libc_allocator_with_realloc<std::pair<const std::string,google::sparse_hash_map<int,std::string,stdext::hash_compare<int,std::less<int>>,std::equal_to<int>,google::libc_allocator_with_realloc<std::pair<const int,std::string>>>>>
+          ]
+  d:\desktop\sparsehash-master\src\sparsehash\internal\sparsehashtable.h(661): note: クラス テンプレート のメンバー関数 'void google::sparse_hashtable<std::pair<const Key,T>,Key,HashFcn,google::sparse_hash_map<Key,T,HashFcn,`anonymous-namespace'::Hasher,google::libc_allocator_with_realloc<std::pair<const Key,T>>>::SelectKey,google::sparse_hash_map<Key,T,HashFcn,`anonymous-namespace'::Hasher,google::libc_allocator_with_realloc<std::pair<const Key,T>>>::SetKey,EqualKey,Alloc>::copy_from(const google::sparse_hashtable<std::pair<const Key,T>,Key,HashFcn,google::sparse_hash_map<Key,T,HashFcn,EqualKey,Alloc>::SelectKey,google::sparse_hash_map<Key,T,HashFcn,EqualKey,Alloc>::SetKey,EqualKey,Alloc> &,unsigned int)' のコンパイル中
+          with
+          [
+              Key=std::string,
+              T=google::sparse_hash_map<int,std::string,stdext::hash_compare<int,std::less<int>>,std::equal_to<int>,google::libc_allocator_with_realloc<std::pair<const int,std::string>>>,
+              HashFcn=`anonymous-namespace'::Hasher,
+              EqualKey=`anonymous-namespace'::Hasher,
+              Alloc=google::libc_allocator_with_realloc<std::pair<const std::string,google::sparse_hash_map<int,std::string,stdext::hash_compare<int,std::less<int>>,std::equal_to<int>,google::libc_allocator_with_realloc<std::pair<const int,std::string>>>>>
+          ]
+  d:\desktop\sparsehash-master\src\sparsehash\internal\sparsehashtable.h(788): note: コンパイル対象の関数 テンプレート インスタンス化 'void google::sparse_hashtable<std::pair<const Key,T>,Key,HashFcn,google::sparse_hash_map<Key,T,HashFcn,`anonymous-namespace'::Hasher,google::libc_allocator_with_realloc<std::pair<const Key,T>>>::SelectKey,google::sparse_hash_map<Key,T,HashFcn,`anonymous-namespace'::Hasher,google::libc_allocator_with_realloc<std::pair<const Key,T>>>::SetKey,EqualKey,Alloc>::copy_from(const google::sparse_hashtable<std::pair<const Key,T>,Key,HashFcn,google::sparse_hash_map<Key,T,HashFcn,EqualKey,Alloc>::SelectKey,google::sparse_hash_map<Key,T,HashFcn,EqualKey,Alloc>::SetKey,EqualKey,Alloc> &,unsigned int)' のリファレンスを確認してください
+          with
+          [
+              Key=std::string,
+              T=google::sparse_hash_map<int,std::string,stdext::hash_compare<int,std::less<int>>,std::equal_to<int>,google::libc_allocator_with_realloc<std::pair<const int,std::string>>>,
+              HashFcn=`anonymous-namespace'::Hasher,
+              EqualKey=`anonymous-namespace'::Hasher,
+              Alloc=google::libc_allocator_with_realloc<std::pair<const std::string,google::sparse_hash_map<int,std::string,stdext::hash_compare<int,std::less<int>>,std::equal_to<int>,google::libc_allocator_with_realloc<std::pair<const int,std::string>>>>>
+          ]
+  d:\desktop\sparsehash-master\src\sparsehash\sparse_hash_map(129): note: コンパイル対象のクラス テンプレート インスタンス化 'google::sparse_hashtable<std::pair<const Key,T>,Key,HashFcn,google::sparse_hash_map<Key,T,HashFcn,`anonymous-namespace'::Hasher,google::libc_allocator_with_realloc<std::pair<const Key,T>>>::SelectKey,google::sparse_hash_map<Key,T,HashFcn,`anonymous-namespace'::Hasher,google::libc_allocator_with_realloc<std::pair<const Key,T>>>::SetKey,EqualKey,Alloc>' のリファレンスを確認してください
+          with
+          [
+              Key=std::string,
+              T=google::sparse_hash_map<int,std::string,stdext::hash_compare<int,std::less<int>>,std::equal_to<int>,google::libc_allocator_with_realloc<std::pair<const int,std::string>>>,
+              HashFcn=`anonymous-namespace'::Hasher,
+              EqualKey=`anonymous-namespace'::Hasher,
+              Alloc=google::libc_allocator_with_realloc<std::pair<const std::string,google::sparse_hash_map<int,std::string,stdext::hash_compare<int,std::less<int>>,std::equal_to<int>,google::libc_allocator_with_realloc<std::pair<const int,std::string>>>>>
+          ]
+  d:\desktop\sparsehash-master\src\hashtable_test.cc(1892): note: コンパイル対象のクラス テンプレート インスタンス化 'google::sparse_hash_map<std::string,google::sparse_hash_map<int,std::string,stdext::hash_compare<Key,std::less<_Kty>>,std::equal_to<Key>,google::libc_allocator_with_realloc<std::pair<const Key,T>>>,`anonymous-namespace'::Hasher,`anonymous-namespace'::Hasher,google::libc_allocator_with_realloc<std::pair<const std::basic_string<char,std::char_traits<char>,std::allocator<char>>,google::sparse_hash_map<Key,T,stdext::hash_compare<_Kty,std::less<_Kty>>,std::equal_to<Key>,google::libc_allocator_with_realloc<std::pair<const Key,T>>>>>>' のリファレンスを確認してください
+          with
+          [
+              Key=int,
+              _Kty=int,
+              T=std::string
+          ]
+d:\desktop\sparsehash-master\src\sparsehash\sparsetable(900): warning C4244: '引数': 'u_int16_t' から 'unsigned char' への変換です。データが失われる可能性があります。
+  d:\desktop\sparsehash-master\src\sparsehash\sparsetable(895): note: クラス テンプレート のメンバー関数 'void google::sparsegroup<T,48,`anonymous-namespace'::Alloc<T,uint8,10>>::free_group(void)' のコンパイル中
+          with
+          [
+              T=int
+          ]
+  d:\desktop\sparsehash-master\src\sparsehash\sparsetable(999): note: コンパイル対象の関数 テンプレート インスタンス化 'void google::sparsegroup<T,48,`anonymous-namespace'::Alloc<T,uint8,10>>::free_group(void)' のリファレンスを確認してください
+          with
+          [
+              T=int
+          ]
+  d:\desktop\sparsehash-master\src\sparsehash\sparsetable(624): note: コンパイル対象のクラス テンプレート インスタンス化 'google::sparsegroup<T,48,`anonymous-namespace'::Alloc<T,uint8,10>>' のリファレンスを確認してください
+          with
+          [
+              T=int
+          ]
+  d:\desktop\sparsehash-master\src\sparsehash\internal\sparsehashtable.h(263): note: コンパイル対象のクラス テンプレート インスタンス化 'google::const_two_d_iterator<std::vector<google::sparsegroup<T,48,`anonymous-namespace'::Alloc<T,uint8,10>>,`anonymous-namespace'::Alloc<U,SizeT,10>>>' のリファレンスを確認してください
+          with
+          [
+              T=int,
+              U=google::sparsegroup<int,48,`anonymous-namespace'::Alloc<int,uint8,10>>,
+              SizeT=uint8
+          ]
+  d:\desktop\sparsehash-master\src\hashtable_test.cc(1970): note: コンパイル対象のクラス テンプレート インスタンス化 'google::sparse_hashtable_const_iterator<Value,Key,HashFcn,ExtractKey,SetKey,EqualKey,Alloc>' のリファレンスを確認してください
+          with
+          [
+              Value=int,
+              Key=int,
+              HashFcn=`anonymous-namespace'::Hasher,
+              ExtractKey=google::sparse_hash_set<int,`anonymous-namespace'::Hasher,`anonymous-namespace'::Hasher,`anonymous-namespace'::Alloc<int,uint8,10>>::Identity,
+              SetKey=google::sparse_hash_set<int,`anonymous-namespace'::Hasher,`anonymous-namespace'::Hasher,`anonymous-namespace'::Alloc<int,uint8,10>>::SetKey,
+              EqualKey=`anonymous-namespace'::Hasher,
+              Alloc=`anonymous-namespace'::Alloc<int,uint8,10>
+          ]
+d:\desktop\sparsehash-master\src\sparsehash\internal\hashtable-common.h(244): warning C4267: 'return': 'size_t' から 'unsigned char' に変換しました。データが失われているかもしれません。
+  d:\desktop\sparsehash-master\src\sparsehash\internal\hashtable-common.h(242): note: クラス テンプレート のメンバー関数 'unsigned char google::sparsehash_internal::sh_hashtable_settings<int,`anonymous-namespace'::Hasher,unsigned char,4>::hash(const int &) const' のコンパイル中
+  d:\desktop\sparsehash-master\src\sparsehash\internal\densehashtable.h(1271): note: コンパイル対象の関数 テンプレート インスタンス化 'unsigned char google::sparsehash_internal::sh_hashtable_settings<int,`anonymous-namespace'::Hasher,unsigned char,4>::hash(const int &) const' のリファレンスを確認してください
+  d:\desktop\sparsehash-master\src\sparsehash\internal\sparsehashtable.h(1165): note: コンパイル対象のクラス テンプレート インスタンス化 'google::sparsehash_internal::sh_hashtable_settings<int,`anonymous-namespace'::Hasher,unsigned char,4>' のリファレンスを確認してください
+  d:\desktop\sparsehash-master\src\sparsehash\internal\sparsehashtable.h(1213): note: コンパイル対象のクラス テンプレート インスタンス化 'google::sparse_hashtable<Value,Value,HashFcn,google::sparse_hash_set<Value,HashFcn,`anonymous-namespace'::Hasher,`anonymous-namespace'::Alloc<int,unsigned char,255>>::Identity,google::sparse_hash_set<Value,HashFcn,`anonymous-namespace'::Hasher,`anonymous-namespace'::Alloc<int,unsigned char,255>>::SetKey,EqualKey,Alloc>::Settings' のリファレンスを確認してください
+          with
+          [
+              Value=int,
+              HashFcn=`anonymous-namespace'::Hasher,
+              EqualKey=`anonymous-namespace'::Hasher,
+              Alloc=`anonymous-namespace'::Alloc<int,unsigned char,255>
+          ]
+  d:\desktop\sparsehash-master\src\sparsehash\sparse_hash_set(121): note: コンパイル対象のクラス テンプレート インスタンス化 'google::sparse_hashtable<Value,Value,HashFcn,google::sparse_hash_set<Value,HashFcn,`anonymous-namespace'::Hasher,`anonymous-namespace'::Alloc<int,unsigned char,255>>::Identity,google::sparse_hash_set<Value,HashFcn,`anonymous-namespace'::Hasher,`anonymous-namespace'::Alloc<int,unsigned char,255>>::SetKey,EqualKey,Alloc>' のリファレンスを確認してください
+          with
+          [
+              Value=int,
+              HashFcn=`anonymous-namespace'::Hasher,
+              EqualKey=`anonymous-namespace'::Hasher,
+              Alloc=`anonymous-namespace'::Alloc<int,unsigned char,255>
+          ]
+  d:\desktop\sparsehash-master\src\hashtable_test.cc(953): note: コンパイル対象のクラス テンプレート インスタンス化 'google::sparse_hash_set<int,`anonymous-namespace'::Hasher,`anonymous-namespace'::Hasher,`anonymous-namespace'::Alloc<int,unsigned char,255>>' のリファレンスを確認してください
+d:\desktop\sparsehash-master\src\sparsehash\sparsetable(883): warning C4244: '引数': 'google::sparsegroup<T,48,`anonymous-namespace'::Alloc<T,unsigned char,255>>::size_type' から 'unsigned char' への変換です。データが失われる可能性があります。
+          with
+          [
+              T=int
+          ]
+  d:\desktop\sparsehash-master\src\sparsehash\sparsetable(882): note: クラス テンプレート のメンバー関数 'int *google::sparsegroup<T,48,`anonymous-namespace'::Alloc<T,unsigned char,255>>::allocate_group(google::sparsegroup<T,48,`anonymous-namespace'::Alloc<T,unsigned char,255>>::size_type)' のコンパイル中
+          with
+          [
+              T=int
+          ]
+  d:\desktop\sparsehash-master\src\sparsehash\sparsetable(1098): note: コンパイル対象の関数 テンプレート インスタンス化 'int *google::sparsegroup<T,48,`anonymous-namespace'::Alloc<T,unsigned char,255>>::allocate_group(google::sparsegroup<T,48,`anonymous-namespace'::Alloc<T,unsigned char,255>>::size_type)' のリファレンスを確認してください
+          with
+          [
+              T=int
+          ]
+d:\desktop\sparsehash-master\src\sparsehash\sparsetable(883): warning C4244: '引数': 'google::sparsegroup<T,48,`anonymous-namespace'::Alloc<T,uint8,10>>::size_type' から 'unsigned char' への変換です。データが失われる可能性があります。
+          with
+          [
+              T=int
+          ]
+  d:\desktop\sparsehash-master\src\sparsehash\sparsetable(882): note: クラス テンプレート のメンバー関数 'int *google::sparsegroup<T,48,`anonymous-namespace'::Alloc<T,uint8,10>>::allocate_group(google::sparsegroup<T,48,`anonymous-namespace'::Alloc<T,uint8,10>>::size_type)' のコンパイル中
+          with
+          [
+              T=int
+          ]
+  d:\desktop\sparsehash-master\src\sparsehash\sparsetable(1098): note: コンパイル対象の関数 テンプレート インスタンス化 'int *google::sparsegroup<T,48,`anonymous-namespace'::Alloc<T,uint8,10>>::allocate_group(google::sparsegroup<T,48,`anonymous-namespace'::Alloc<T,uint8,10>>::size_type)' のリファレンスを確認してください
+          with
+          [
+              T=int
+          ]
+d:\desktop\sparsehash-master\src\hashtable_test.cc(589): error C2065: 'unused': 定義されていない識別子です。
+  d:\desktop\sparsehash-master\src\hashtable_test.cc(571): note: クラス テンプレート のメンバー関数 'void `anonymous-namespace'::TEST_onetype_HashtableIntTest_Typedefs<`anonymous-namespace'::HashtableIntTest_type1>::Run(void)' のコンパイル中
+  d:\desktop\sparsehash-master\src\hashtable_test.cc(571): note: コンパイル対象の関数 テンプレート インスタンス化 'void `anonymous-namespace'::TEST_onetype_HashtableIntTest_Typedefs<`anonymous-namespace'::HashtableIntTest_type1>::Run(void)' のリファレンスを確認してください
+  d:\desktop\sparsehash-master\src\hashtable_test.cc(571): note: コンパイル対象のクラス テンプレート インスタンス化 '`anonymous-namespace'::TEST_onetype_HashtableIntTest_Typedefs<`anonymous-namespace'::HashtableIntTest_type1>' のリファレンスを確認してください
+d:\desktop\sparsehash-master\src\hashtable_test.cc(589): error C3861: '__attribute__': 識別子が見つかりませんでした
+d:\desktop\sparsehash-master\src\hashtable_test.cc(589): error C2144: 構文エラー: 'google::BaseHashtableInterface<google::sparse_hash_map<Key,T,HashFcn,EqualKey,Alloc>>::reference' は ';' によって先行されなければなりません。
+          with
+          [
+              Key=int,
+              T=int,
+              HashFcn=`anonymous-namespace'::Hasher,
+              EqualKey=`anonymous-namespace'::Hasher,
+              Alloc=`anonymous-namespace'::Alloc<int,size_t,4294967295>
+          ]
+d:\desktop\sparsehash-master\src\hashtable_test.cc(590): error C2065: 'unused': 定義されていない識別子です。
+d:\desktop\sparsehash-master\src\hashtable_test.cc(590): error C3861: '__attribute__': 識別子が見つかりませんでした
+d:\desktop\sparsehash-master\src\hashtable_test.cc(590): error C2144: 構文エラー: 'google::BaseHashtableInterface<google::sparse_hash_map<Key,T,HashFcn,EqualKey,Alloc>>::const_reference' は ';' によって先行されなければなりません。
+          with
+          [
+              Key=int,
+              T=int,
+              HashFcn=`anonymous-namespace'::Hasher,
+              EqualKey=`anonymous-namespace'::Hasher,
+              Alloc=`anonymous-namespace'::Alloc<int,size_t,4294967295>
+          ]
+d:\desktop\sparsehash-master\src\hashtable_test.cc(589): error C2144: 構文エラー: 'google::BaseHashtableInterface<google::sparse_hash_set<Value,HashFcn,EqualKey,Alloc>>::reference' は ';' によって先行されなければなりません。
+          with
+          [
+              Value=int,
+              HashFcn=`anonymous-namespace'::Hasher,
+              EqualKey=`anonymous-namespace'::Hasher,
+              Alloc=`anonymous-namespace'::Alloc<int,size_t,4294967295>
+          ]
+d:\desktop\sparsehash-master\src\hashtable_test.cc(590): error C2144: 構文エラー: 'google::BaseHashtableInterface<google::sparse_hash_set<Value,HashFcn,EqualKey,Alloc>>::const_reference' は ';' によって先行されなければなりません。
+          with
+          [
+              Value=int,
+              HashFcn=`anonymous-namespace'::Hasher,
+              EqualKey=`anonymous-namespace'::Hasher,
+              Alloc=`anonymous-namespace'::Alloc<int,size_t,4294967295>
+          ]
+d:\desktop\sparsehash-master\src\hashtable_test.cc(589): error C2144: 構文エラー: 'google::BaseHashtableInterface<google::sparse_hashtable<Value,Key,HashFcn,ExtractKey,SetKey,EqualKey,Alloc>>::reference' は ';' によって先行されなければなりません。
+          with
+          [
+              Value=int,
+              Key=int,
+              HashFcn=`anonymous-namespace'::Hasher,
+              ExtractKey=`anonymous-namespace'::Negation<int>,
+              SetKey=`anonymous-namespace'::SetKey<int,`anonymous-namespace'::Negation<int>>,
+              EqualKey=`anonymous-namespace'::Hasher,
+              Alloc=`anonymous-namespace'::Alloc<int,size_t,4294967295>
+          ]
+d:\desktop\sparsehash-master\src\hashtable_test.cc(590): error C2144: 構文エラー: 'google::BaseHashtableInterface<google::sparse_hashtable<Value,Key,HashFcn,ExtractKey,SetKey,EqualKey,Alloc>>::const_reference' は ';' によって先行されなければなりません。
+          with
+          [
+              Value=int,
+              Key=int,
+              HashFcn=`anonymous-namespace'::Hasher,
+              ExtractKey=`anonymous-namespace'::Negation<int>,
+              SetKey=`anonymous-namespace'::SetKey<int,`anonymous-namespace'::Negation<int>>,
+              EqualKey=`anonymous-namespace'::Hasher,
+              Alloc=`anonymous-namespace'::Alloc<int,size_t,4294967295>
+          ]
+d:\desktop\sparsehash-master\src\hashtable_test.cc(589): error C2144: 構文エラー: 'google::BaseHashtableInterface<google::dense_hash_map<Key,T,HashFcn,EqualKey,Alloc>>::reference' は ';' によって先行されなければなりません。
+          with
+          [
+              Key=int,
+              T=int,
+              HashFcn=`anonymous-namespace'::Hasher,
+              EqualKey=`anonymous-namespace'::Hasher,
+              Alloc=`anonymous-namespace'::Alloc<int,size_t,4294967295>
+          ]
+d:\desktop\sparsehash-master\src\hashtable_test.cc(590): error C2144: 構文エラー: 'google::BaseHashtableInterface<google::dense_hash_map<Key,T,HashFcn,EqualKey,Alloc>>::const_reference' は ';' によって先行されなければなりません。
+          with
+          [
+              Key=int,
+              T=int,
+              HashFcn=`anonymous-namespace'::Hasher,
+              EqualKey=`anonymous-namespace'::Hasher,
+              Alloc=`anonymous-namespace'::Alloc<int,size_t,4294967295>
+          ]
+d:\desktop\sparsehash-master\src\hashtable_test.cc(589): error C2144: 構文エラー: 'google::BaseHashtableInterface<google::dense_hash_set<Value,HashFcn,EqualKey,Alloc>>::reference' は ';' によって先行されなければなりません。
+          with
+          [
+              Value=int,
+              HashFcn=`anonymous-namespace'::Hasher,
+              EqualKey=`anonymous-namespace'::Hasher,
+              Alloc=`anonymous-namespace'::Alloc<int,size_t,4294967295>
+          ]
+d:\desktop\sparsehash-master\src\hashtable_test.cc(590): error C2144: 構文エラー: 'google::BaseHashtableInterface<google::dense_hash_set<Value,HashFcn,EqualKey,Alloc>>::const_reference' は ';' によって先行されなければなりません。
+          with
+          [
+              Value=int,
+              HashFcn=`anonymous-namespace'::Hasher,
+              EqualKey=`anonymous-namespace'::Hasher,
+              Alloc=`anonymous-namespace'::Alloc<int,size_t,4294967295>
+          ]
+d:\desktop\sparsehash-master\src\hashtable_test.cc(589): error C2144: 構文エラー: 'google::BaseHashtableInterface<google::dense_hashtable<Value,Key,HashFcn,ExtractKey,SetKey,EqualKey,Alloc>>::reference' は ';' によって先行されなければなりません。
+          with
+          [
+              Value=int,
+              Key=int,
+              HashFcn=`anonymous-namespace'::Hasher,
+              ExtractKey=`anonymous-namespace'::Negation<int>,
+              SetKey=`anonymous-namespace'::SetKey<int,`anonymous-namespace'::Negation<int>>,
+              EqualKey=`anonymous-namespace'::Hasher,
+              Alloc=`anonymous-namespace'::Alloc<int,size_t,4294967295>
+          ]
+d:\desktop\sparsehash-master\src\hashtable_test.cc(590): error C2144: 構文エラー: 'google::BaseHashtableInterface<google::dense_hashtable<Value,Key,HashFcn,ExtractKey,SetKey,EqualKey,Alloc>>::const_reference' は ';' によって先行されなければなりません。
+          with
+          [
+              Value=int,
+              Key=int,
+              HashFcn=`anonymous-namespace'::Hasher,
+              ExtractKey=`anonymous-namespace'::Negation<int>,
+              SetKey=`anonymous-namespace'::SetKey<int,`anonymous-namespace'::Negation<int>>,
+              EqualKey=`anonymous-namespace'::Hasher,
+              Alloc=`anonymous-namespace'::Alloc<int,size_t,4294967295>
+          ]
+  コードを生成中...

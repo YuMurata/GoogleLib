@@ -1,0 +1,76 @@
+﻿  port.cc
+d:\desktop\sparsehash-master\src\windows\port.cc(44): error C2084: 関数 'int snprintf(char *const ,const size_t,const char *const ,...)' は既に本体を持っています。
+  c:\program files\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1932): note: 'snprintf' の以前の定義を確認してください
+  sparsetable_unittest.cc
+d:\desktop\sparsehash-master\src\sparsehash\internal\hashtable-common.h(179): error C2065: 'unused': 定義されていない識別子です。
+  d:\desktop\sparsehash-master\src\sparsehash\sparsetable(1654): note: コンパイル対象の関数 テンプレート インスタンス化 'bool google::sparsehash_internal::write_bigendian_number<OUTPUT,IntType>(OUTPUT *,IntType,size_t)' のリファレンスを確認してください
+          with
+          [
+              OUTPUT=FILE,
+              IntType=google::sparsetable<int,48,google::libc_allocator_with_realloc<int>>::MagicNumberType
+          ]
+  d:\desktop\sparsehash-master\src\sparsehash\sparsetable(1684): note: コンパイル対象の関数 テンプレート インスタンス化 'bool google::sparsetable<int,48,google::libc_allocator_with_realloc<T>>::write_32_or_64<OUTPUT,google::sparsetable<T,48,google::libc_allocator_with_realloc<T>>::MagicNumberType>(OUTPUT *,IntType)' のリファレンスを確認してください
+          with
+          [
+              T=int,
+              OUTPUT=FILE,
+              IntType=google::sparsetable<int,48,google::libc_allocator_with_realloc<int>>::MagicNumberType
+          ]
+  d:\desktop\sparsehash-master\src\sparsehash\sparsetable(1684): note: コンパイル対象の関数 テンプレート インスタンス化 'bool google::sparsetable<int,48,google::libc_allocator_with_realloc<T>>::write_32_or_64<OUTPUT,google::sparsetable<T,48,google::libc_allocator_with_realloc<T>>::MagicNumberType>(OUTPUT *,IntType)' のリファレンスを確認してください
+          with
+          [
+              T=int,
+              OUTPUT=FILE,
+              IntType=google::sparsetable<int,48,google::libc_allocator_with_realloc<int>>::MagicNumberType
+          ]
+  d:\desktop\sparsehash-master\src\sparsetable_unittest.cc(358): note: コンパイル対象の関数 テンプレート インスタンス化 'bool google::sparsetable<int,48,google::libc_allocator_with_realloc<T>>::write_metadata<FILE>(OUTPUT *) const' のリファレンスを確認してください
+          with
+          [
+              T=int,
+              OUTPUT=FILE
+          ]
+  d:\desktop\sparsehash-master\src\sparsetable_unittest.cc(358): note: コンパイル対象の関数 テンプレート インスタンス化 'bool google::sparsetable<int,48,google::libc_allocator_with_realloc<T>>::write_metadata<FILE>(OUTPUT *) const' のリファレンスを確認してください
+          with
+          [
+              T=int,
+              OUTPUT=FILE
+          ]
+d:\desktop\sparsehash-master\src\sparsehash\internal\hashtable-common.h(179): error C3861: '__attribute__': 識別子が見つかりませんでした
+d:\desktop\sparsehash-master\src\sparsehash\internal\hashtable-common.h(179): error C2144: 構文エラー: 'google::SparsehashCompileAssert<true>' は ';' によって先行されなければなりません。
+d:\desktop\sparsehash-master\src\sparsehash\internal\hashtable-common.h(166): error C2065: 'unused': 定義されていない識別子です。
+  d:\desktop\sparsehash-master\src\sparsehash\sparsetable(1668): note: コンパイル対象の関数 テンプレート インスタンス化 'bool google::sparsehash_internal::read_bigendian_number<INPUT,google::sparsetable<int,48,google::libc_allocator_with_realloc<T>>::MagicNumberType>(INPUT *,IntType *,size_t)' のリファレンスを確認してください
+          with
+          [
+              INPUT=FILE,
+              T=int,
+              IntType=google::sparsetable<int,48,google::libc_allocator_with_realloc<int>>::MagicNumberType
+          ]
+  d:\desktop\sparsehash-master\src\sparsehash\sparsetable(1697): note: コンパイル対象の関数 テンプレート インスタンス化 'bool google::sparsetable<int,48,google::libc_allocator_with_realloc<T>>::read_32_or_64<INPUT,unsigned int>(INPUT *,IntType *)' のリファレンスを確認してください
+          with
+          [
+              T=int,
+              INPUT=FILE,
+              IntType=unsigned int
+          ]
+  d:\desktop\sparsehash-master\src\sparsehash\sparsetable(1697): note: コンパイル対象の関数 テンプレート インスタンス化 'bool google::sparsetable<int,48,google::libc_allocator_with_realloc<T>>::read_32_or_64<INPUT,unsigned int>(INPUT *,IntType *)' のリファレンスを確認してください
+          with
+          [
+              T=int,
+              INPUT=FILE,
+              IntType=unsigned int
+          ]
+  d:\desktop\sparsehash-master\src\sparsetable_unittest.cc(367): note: コンパイル対象の関数 テンプレート インスタンス化 'bool google::sparsetable<int,48,google::libc_allocator_with_realloc<T>>::read_metadata<FILE>(INPUT *)' のリファレンスを確認してください
+          with
+          [
+              T=int,
+              INPUT=FILE
+          ]
+  d:\desktop\sparsehash-master\src\sparsetable_unittest.cc(367): note: コンパイル対象の関数 テンプレート インスタンス化 'bool google::sparsetable<int,48,google::libc_allocator_with_realloc<T>>::read_metadata<FILE>(INPUT *)' のリファレンスを確認してください
+          with
+          [
+              T=int,
+              INPUT=FILE
+          ]
+d:\desktop\sparsehash-master\src\sparsehash\internal\hashtable-common.h(166): error C3861: '__attribute__': 識別子が見つかりませんでした
+d:\desktop\sparsehash-master\src\sparsehash\internal\hashtable-common.h(166): error C2144: 構文エラー: 'google::SparsehashCompileAssert<true>' は ';' によって先行されなければなりません。
+  コードを生成中...

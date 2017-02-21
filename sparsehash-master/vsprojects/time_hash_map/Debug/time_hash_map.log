@@ -1,0 +1,10 @@
+﻿  port.cc
+d:\desktop\sparsehash-master\src\windows\port.cc(44): error C2084: 関数 'int snprintf(char *const ,const size_t,const char *const ,...)' は既に本体を持っています。
+  c:\program files\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1932): note: 'snprintf' の以前の定義を確認してください
+  time_hash_map.cc
+d:\desktop\sparsehash-master\src\time_hash_map.cc(106): error C2039: 'unordered_map': 'stdext' のメンバーではありません。
+  c:\program files\microsoft visual studio 14.0\vc\include\iterator(352): note: 'stdext' の宣言を確認してください
+d:\desktop\sparsehash-master\src\time_hash_map.cc(106): error C2873: 'unordered_map': シンボルを using 宣言の中で使用することはできません。
+d:\desktop\sparsehash-master\src\time_hash_map.cc(155): error C2143: 構文エラー: ',' が '<' の前にありません。
+  d:\desktop\sparsehash-master\src\time_hash_map.cc(159): note: コンパイル対象のクラス テンプレート インスタンス化 'EasyUseHashMap<K,V,H>' のリファレンスを確認してください
+  コードを生成中...
